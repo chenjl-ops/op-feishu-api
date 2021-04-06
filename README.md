@@ -35,7 +35,9 @@ uvicorn==0.11.3
 飞书open api接口
 
 ## Run Server
+```
 python main.py --port xxxx
+```
 
 ## TODO
 1. 其他功能集合扩展
