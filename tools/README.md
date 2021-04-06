@@ -1,6 +1,3 @@
-# op-feishu-api
-封装飞书相关接口
-
 ## 简介
 op-feishu-api主要封装飞书api提供相关api服务
 对外提供如下能力(基于飞书):
@@ -24,6 +21,7 @@ op-feishu-api主要封装飞书api提供相关api服务
 5. 更新群信息
 6. 群内 加人 踢人
 
+
 ## 环境依赖
 python >= 3.6
 fastapi==0.49.0
@@ -34,8 +32,11 @@ uvicorn==0.11.3
 ## 外部依赖
 飞书open api接口
 
+## 配置
+详见apollo 项目：op-robot-feishu-api
+
 ## Run Server
-python main.py --port xxxx
+uvicorn main:app --host 0.0.0.0 --port xxxx
 
 ## TODO
 1. 其他功能集合扩展
