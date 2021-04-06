@@ -41,3 +41,11 @@ python main.py --port xxxx
 
 ## TODO
 1. 其他功能集合扩展
+
+## 启动 验证
+![image](https://user-images.githubusercontent.com/81603118/113654795-3401e900-96cb-11eb-8203-61298428e9f7.png)
+![image](https://user-images.githubusercontent.com/81603118/113654862-60b60080-96cb-11eb-8eed-b5bf54266a17.png)
+![image](https://user-images.githubusercontent.com/81603118/113654907-79261b00-96cb-11eb-9b44-1c961d45edb8.png)
+
+
+
