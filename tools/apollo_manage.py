@@ -10,7 +10,7 @@ URL = "http://configserver-{env}.chj.cloud/configs/{appName}/default/application
 ALL_APOLLO_COFNIG = dict()
 
 def get_apollo_config(k, appName):
-    return ALL_APOLLO_COFNIG(k, "")
+    return ALL_APOLLO_COFNIG.get(k, "")
 
 
 def get_apollo_all_config(appName):
