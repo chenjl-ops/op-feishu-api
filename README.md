@@ -42,6 +42,10 @@ python main.py --port xxxx
 ## 修改配置 以及接入
 ![image](https://user-images.githubusercontent.com/81603118/114645460-1efd0980-9d0c-11eb-9c2b-231a9ea368a0.png)
 ![image](https://user-images.githubusercontent.com/81603118/114645489-30461600-9d0c-11eb-84c5-d39d4daf3cb1.png)
+![image](https://user-images.githubusercontent.com/81603118/114646210-6e900500-9d0d-11eb-9e7c-e796125b0801.png)
+![image](https://user-images.githubusercontent.com/81603118/114646225-75b71300-9d0d-11eb-93c4-34d9a767b541.png)
+
+### 后续上传robot平台代码 支持接入服务，各个机器人开启机器人 callback配置即可
 
 
 ## TODO
