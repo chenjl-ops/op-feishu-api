@@ -32,8 +32,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app_id="cli_9fe681baedff100e" 
-app_secret="M67a77yl97BT3JkwboZ0UfgOTMi1PTtW"
+app_id="cli_xxxxxxxx" 
+app_secret="xxxxxxxxxxxx"
 
 log_config = uvicorn.config.LOGGING_CONFIG
 log_config["formatters"]["access"]["fmt"] = "%(asctime)s - %(levelname)s - %(message)s"
@@ -43,7 +43,7 @@ log_config["formatters"]["default"]["fmt"] = "%(asctime)s - %(levelname)s - %(me
 @app.get("/v1/users/", summary="获取用户信息(企业应用open_id和user_id)", tags=["FeishuUser"])
 def get_feishu_users_info(usernames: str, app_id: str=app_id, app_secret: str=app_secret):
     url = "https://open.feishu.cn/open-apis/user/v1/batch_get_id?"
-    s = "&".join(["emails=%s@lixiang.com"%x for x in usernames.split(",")])
+    s = "&".join(["emails=%s@xxxx.com"%x for x in usernames.split(",")])
     return feishu_requests_main("get", url+s, app_id=app_id, app_secret=app_secret)
 
 @app.get("/v1/users/open_ids/", summary="获取用户信息(通过open_id)", tags=["FeishuUser"])
