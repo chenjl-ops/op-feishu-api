@@ -39,6 +39,11 @@ uvicorn==0.11.3
 python main.py --port xxxx
 ```
 
+## 修改配置 以及接入
+![image](https://user-images.githubusercontent.com/81603118/114645460-1efd0980-9d0c-11eb-9c2b-231a9ea368a0.png)
+![image](https://user-images.githubusercontent.com/81603118/114645489-30461600-9d0c-11eb-84c5-d39d4daf3cb1.png)
+
+
 ## TODO
 1. 其他功能集合扩展
 
