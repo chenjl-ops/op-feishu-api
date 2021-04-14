@@ -238,7 +238,6 @@ def feishu_send_message_card(request_data: MessageCard, app_id: str=app_id, app_
             elements.append(feishu_card_markdown(x.get("content")))
 
     data["card"]["elements"] = elements
-    print("card_data:", data)
 
     return feishu_requests_main("post", url, data, app_id, app_secret)
 
@@ -354,8 +353,6 @@ def feishu_message(message_id: str, page_token: str="", page_size: int=50, star_
     path = "/open-apis/im/v1/messages"
 
     query = "?container_id_type={message_type}&container_id={message_id}&star_time={star_time}&end_time={end_time}&page_size={page_size}&page_token={page_token}".format(message_type=message_type, message_id=message_id, star_time=star_time, end_time=end_time, page_size=page_size, page_token=page_token)
-
-    print(host+path+query)
 
     return feishu_requests_main("get", host+path+query, dict(), app_id, app_secret)
 
