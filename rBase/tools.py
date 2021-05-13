@@ -1,6 +1,6 @@
 
 #获取飞书 access_token
-def get_tenant_access_token(app_id="cli_9fe681baedff100e", app_secret="M67a77yl97BT3JkwboZ0UfgOTMi1PTtW"):
+def get_tenant_access_token(app_id="xxxxxx", app_secret="**********"):
     import json
     import requests
 
@@ -11,7 +11,7 @@ def get_tenant_access_token(app_id="cli_9fe681baedff100e", app_secret="M67a77yl9
     return requests.post(url, headers=headers, data=json.dumps(data)).json()
 
 #封装飞书所有接口请求, 在header中增加authorization控制
-def feishu_requests_main(method, url, data=dict(), app_id="cli_9fe681baedff100e", app_secret="M67a77yl97BT3JkwboZ0UfgOTMi1PTtW"):
+def feishu_requests_main(method, url, data=dict(), app_id="xxxxxx", app_secret="**********"):
     import json
     import requests
 
@@ -38,7 +38,7 @@ def feishu_requests_main(method, url, data=dict(), app_id="cli_9fe681baedff100e"
         return {"code": 400, "msg": "method %s not allow"%method}
 
 #飞书上传图片统一接口 图片地址转换成飞书官方image_id
-def feishu_upload_image(image_path, app_id="cli_9fe681baedff100e", app_secret="M67a77yl97BT3JkwboZ0UfgOTMi1PTtW"):
+def feishu_upload_image(image_path, app_id="xxxxxx", app_secret="************"):
     import requests
     with open(image_path, 'rb') as f:
         image = f.read()
