@@ -6,7 +6,7 @@ import json
 import requests
 
 ENV = "dev"
-URL = "http://configserver-{env}.chj.cloud/configs/{appName}/default/application"
+URL = "http://configserver-{env}.xxx.cloud/configs/{appName}/default/application"
 
 
 class ApolloConfig(object):
